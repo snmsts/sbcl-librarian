@@ -15,3 +15,8 @@
 *.sx32fsl
 *.wx64fsl
 *.wx32fsl
+*.so
+*.core
+example/example
+example/libcalc.c
+example/libcalc.h

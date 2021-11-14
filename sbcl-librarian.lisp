@@ -244,7 +244,7 @@
                                        :if-exists :supersede)
                  ,@(header-emitter-from-specs 'stream function-prefix error-map specs)
                  (format stream "extern void (*release_handle)(void *handle);~%")
-                 (format stream "extern int ~ainit();" ,function-prefix))
+                 (format stream "extern int ~ainit(char *core);~%" ,function-prefix))
                (with-open-file (stream (merge-pathnames ,source-name directory)
                                        :direction :output
                                        :if-exists :supersede)
